@@ -13,8 +13,11 @@ change in party affiliation, ethnicity, ethnic group, religion, marital status, 
   - We also encrypted Voter IDs using a simple Caesar Cipher, however if necessary, we can get rid of that field in the data altogether.
 
 ## Data Visualization
-RAHUL DESCRIBE WHAT YOU DID HERE
+We wanted to show readers the correlations between the polititcal party type and Income group or ethnicity to see voting patterns between income groups and ethnicities. To most effectively show the connections between these two variables, the data had to be re-formatted various ways to accomodate for each income group or ethnicity to relate their perspective political parties. We used matplotlib.pyplot to plot our bar graphs. We made a total of 2 graphs where the x-axis was Income Groups and Ethnicities, and the y-axis was count for each political party. Each x-axis componenet had 8 individual bars representing the count of the votes for each party. The graphs are in the 'Income_Parties.pdf' and the 'Ethnicity_Parties.pdf' files.
+
+
 
 ## Our Code
 * We edited the jupiter notebook provided to us by NYU Libraries to better fit our needs: [l2-political-general-subsetting-guide.ipynb](l2-political-general-subsetting-guide.ipynb).
-* RAHUL INCLUDE BRIEF DESCRIPTION OF YOUR CODE HERE
+* We created a python program that finds our newfound data that has just been anonymized (it has to be in the same directory as the code and the filename has to be replaced in the actual code to the correct file name : state_demographic = pd.read_csv('PUT FILENAME HERE', usecols=selected_variables)). The python program takes the incoming csv file and reorganizes the data into a dictionary that is nestes in another dictionary. The first index would either be the income group or ethnicity and the indexes within these index would be the seperate political parties for each perspective income or ethnicity. The value for each of the political parties was a count keeping track of the amount of people who voted for that party in that income group or ethnicity. Than the data had to be reorganized into array formats so that it could be taken as parameters in the df2 = pd.DataFrame() funciton which is what all the if clauses are doing. 
+
