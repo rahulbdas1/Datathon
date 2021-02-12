@@ -18,6 +18,6 @@ We wanted to show readers the correlations between the polititcal party type and
 
 
 ## Our Code
-* We edited the jupiter notebook provided to us by NYU Libraries to better fit our needs: [l2_political_general_subsetting_guide.ipynb](l2_political_general_subsetting_guide.ipynb).
+* We edited the jupyter notebook provided to us by NYU Libraries to better fit our needs: [l2_political_general_subsetting_guide.ipynb](l2_political_general_subsetting_guide.ipynb). Instead of taking a one percent sample, we took a two percent sample. Parts V and VI were added on to edit Voter IDs and birthdays.
 * We created a python program that finds our newfound data that has just been anonymized (it has to be in the same directory as the code and the filename has to be replaced in the actual code to the correct file name : state_demographic = pd.read_csv('PUT FILENAME HERE', usecols=selected_variables)). The python program takes the incoming csv file and reorganizes the data into a dictionary that is nestes in another dictionary. The first index would either be the income group or ethnicity and the indexes within these index would be the seperate political parties for each perspective income or ethnicity. The value for each of the political parties was a count keeping track of the amount of people who voted for that party in that income group or ethnicity. Than the data had to be reorganized into array formats so that it could be taken as parameters in the df2 = pd.DataFrame() funciton which is what all the if clauses are doing. 
 
