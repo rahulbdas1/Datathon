@@ -14,6 +14,8 @@ change in party affiliation, ethnicity, ethnic group, religion, marital status, 
 
 ## Data Visualization
 We wanted to show readers the correlations between the polititcal party type and Income group or ethnicity to see voting patterns between income groups and ethnicities. To most effectively show the connections between these two variables, the data had to be re-formatted various ways to accomodate for each income group or ethnicity to relate their perspective political parties. We used matplotlib.pyplot to plot our bar graphs. We made a total of 2 graphs where the x-axis was Income Groups and Ethnicities, and the y-axis was count for each political party. Each x-axis componenet had 8 individual bars representing the count of the votes for each party. The graphs are in the 'Income_Parties.pdf' and the 'Ethnicity_Parties.pdf' files. This code shows the relationship for Alaska but can be used for any other states multiple states combined if you simple merge the demographics files of each state and change the filepath. 
+scrpit:
+python3 datathon.py
 
 
 
